@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Exemplo de site acessível com HTML e CSS" />
+  <title>Site Acessível</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Site Acessível</h1>
+    <nav role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio" role="main">
+    <section>
+      <h2>Bem-vindo</h2>
+      <p>Este é um exemplo de site com recursos de acessibilidade implementados corretamente.</p>
+      <img src="https://via.placeholder.com/300x150" alt="Exemplo de imagem com descrição adequada" />
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Usamos boas práticas de HTML, CSS e acessibilidade para garantir uma boa experiência a todos os usuários.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form aria-label="Formulário de contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Site Acessível. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
